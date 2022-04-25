@@ -20,10 +20,19 @@
 
 
 <style>
-  :global(body) {
-    background-color: lemonchiffon;
+   :global(body){
+    background-image: url("src/ธรรมศาสตร์-รังสิต-1.jpg"); 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 150% 150%; 
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0, 0.1);
+    background-blend-mode: multiply;
   }
+   :global(h1){
+        color:white;
+    }
 </style>
+
 
 
 <body class="text-center">
@@ -31,7 +40,7 @@
         <div class="main">
         <div class="form-login">
             <form  id="form_id" method="post" name="myform">
-                
+                <img src="src/assets/logo.png" height="250">
                 <h1 class="mb-3"><b>Login</b></h1>
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="username" placeholder="Username" bind:value={username}>
